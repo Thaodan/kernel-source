@@ -1,0 +1,133 @@
+From 64ac823eca026e73bacbaf09e772d9077fb78d04 Mon Sep 17 00:00:00 2001
+From: Dan Johansen <strit@manjaro.org>
+Date: Mon, 12 Jul 2021 11:17:18 +0200
+Subject: [PATCH 22/30] arm64/dts/allwinner: add hdmi sound to pine devices
+
+Signed-off-by: Dan Johansen <strit@manjaro.org>
+---
+ .../dts/allwinner/sun50i-a64-pine64-lts.dts   |  8 +++++++
+ .../boot/dts/allwinner/sun50i-a64-pine64.dts  |  8 +++++++
+ .../dts/allwinner/sun50i-a64-pinebook.dts     |  8 +++++++
+ arch/arm64/boot/dts/allwinner/sun50i-a64.dtsi | 21 ++++++++++++++++++-
+ 4 files changed, 44 insertions(+), 1 deletion(-)
+
+diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64-lts.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64-lts.dts
+index 596a25907432..d37b17914937 100644
+--- a/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64-lts.dts
++++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64-lts.dts
+@@ -20,6 +20,14 @@ led {
+ 	};
+ };
+ 
++&i2s2 {
++	status = "okay";
++};
++
+ &mmc0 {
+ 	broken-cd;		/* card detect is broken on *some* boards */
+ };
++
++&sound_hdmi {
++	status = "okay";
++};
+diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64.dts
+index 2accb5ddf783..17886709b6b4 100644
+--- a/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64.dts
++++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-pine64.dts
+@@ -107,6 +107,10 @@ &i2c1_pins {
+ 	bias-pull-up;
+ };
+ 
++&i2s2 {
++	status = "okay";
++};
++
+ &mdio {
+ 	ext_rmii_phy1: ethernet-phy@1 {
+ 		compatible = "ethernet-phy-ieee802.3-c22";
+@@ -270,6 +274,10 @@ &sound {
+ 	status = "okay";
+ };
+ 
++&sound_hdmi {
++	status = "okay";
++};
++
+ /* On Euler connector */
+ &spdif {
+ 	status = "disabled";
+diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-pinebook.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-pinebook.dts
+index 620cb3ef5f6c..8bc3f2b13375 100644
+--- a/arch/arm64/boot/dts/allwinner/sun50i-a64-pinebook.dts
++++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-pinebook.dts
+@@ -138,6 +138,10 @@ &mixer0 {
+ 	status = "okay";
+ };
+ 
++&i2s2 {
++	status = "okay";
++};
++
+ &mmc0 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&mmc0_pins>;
+@@ -400,6 +404,10 @@ tcon0_out_anx6345: endpoint {
+ 	};
+ };
+ 
++&sound_hdmi {
++	status = "okay";
++};
++
+ &uart0 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&uart0_pb_pins>;
+diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64.dtsi b/arch/arm64/boot/dts/allwinner/sun50i-a64.dtsi
+index 77b5349f6087..8ee43836f6a9 100644
+--- a/arch/arm64/boot/dts/allwinner/sun50i-a64.dtsi
++++ b/arch/arm64/boot/dts/allwinner/sun50i-a64.dtsi
+@@ -164,7 +164,7 @@ simple-audio-card,dai-link@0 {
+ 			format = "i2s";
+ 			frame-master = <&link0_cpu>;
+ 			bitclock-master = <&link0_cpu>;
+-			mclk-fs = <128>;
++			mclk-fs = <256>;
+ 
+ 			link0_cpu: cpu {
+ 				sound-dai = <&dai>;
+@@ -918,6 +918,24 @@ i2s2: i2s@1c22800 {
+ 			status = "disabled";
+ 		};
+ 
++		sound_hdmi: sound_hdmi {
++			compatible = "simple-audio-card";
++			simple-audio-card,format = "i2s";
++			simple-audio-card,name = "allwinner-hdmi";
++			simple-audio-card,mclk-fs = <256>;
++			status = "disabled";
++
++			simple-audio-card,codec {
++				sound-dai = <&hdmi>;
++			};
++
++			simple-audio-card,cpu {
++				sound-dai = <&i2s2>;
++				dai-tdm-slot-num = <2>;
++				dai-tdm-slot-width = <32>;
++			};
++		};
++
+ 		dai: dai@1c22c00 {
+ 			#sound-dai-cells = <0>;
+ 			compatible = "allwinner,sun50i-a64-codec-i2s";
+@@ -1222,6 +1240,7 @@ deinterlace: deinterlace@1e00000 {
+ 		};
+ 
+ 		hdmi: hdmi@1ee0000 {
++			#sound-dai-cells = <0>;
+ 			compatible = "allwinner,sun50i-a64-dw-hdmi",
+ 				     "allwinner,sun8i-a83t-dw-hdmi";
+ 			reg = <0x01ee0000 0x10000>;
+-- 
+2.39.0
+

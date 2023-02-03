@@ -1,0 +1,35 @@
+From 162314f39e1288d9f124a28aebd2fc9c80e6132d Mon Sep 17 00:00:00 2001
+From: Dongjin Kim <tobetter@gmail.com>
+Date: Fri, 30 Sep 2022 07:12:34 +0200
+Subject: [PATCH 08/30] dt-bindings: rockchip: Add Hardkernel ODROID-M1 board
+
+Add device tree binding for Hardkernel ODROID-M1 board based on RK3568
+SoC.
+
+Signed-off-by: Dongjin Kim <tobetter@gmail.com>
+Signed-off-by: Aurelien Jarno <aurelien@aurel32.net>
+Acked-by: Krzysztof Kozlowski <krzysztof.kozlowski@linaro.org>
+Tested-by: Dan Johansen <strit@manjaro.org>
+---
+ Documentation/devicetree/bindings/arm/rockchip.yaml | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/Documentation/devicetree/bindings/arm/rockchip.yaml b/Documentation/devicetree/bindings/arm/rockchip.yaml
+index c6c69a4e3777..3d6a6be32ffa 100644
+--- a/Documentation/devicetree/bindings/arm/rockchip.yaml
++++ b/Documentation/devicetree/bindings/arm/rockchip.yaml
+@@ -468,6 +468,11 @@ properties:
+           - const: hardkernel,rk3326-odroid-go2
+           - const: rockchip,rk3326
+ 
++      - description: Hardkernel Odroid M1
++        items:
++          - const: rockchip,rk3568-odroid-m1
++          - const: rockchip,rk3568
++
+       - description: Hugsun X99 TV Box
+         items:
+           - const: hugsun,x99
+-- 
+2.39.0
+

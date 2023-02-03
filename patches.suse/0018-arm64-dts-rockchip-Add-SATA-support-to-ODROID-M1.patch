@@ -1,0 +1,43 @@
+From 87854f994111a556f7d2c8747a2258e66253ab02 Mon Sep 17 00:00:00 2001
+From: Aurelien Jarno <aurelien@aurel32.net>
+Date: Fri, 30 Sep 2022 07:12:44 +0200
+Subject: [PATCH 18/30] arm64: dts: rockchip: Add SATA support to ODROID-M1
+
+Enable the Combo PHY and SATA nodes in ODROID-M1.
+
+Signed-off-by: Aurelien Jarno <aurelien@aurel32.net>
+Tested-by: Dan Johansen <strit@manjaro.org>
+---
+ arch/arm64/boot/dts/rockchip/rk3568-odroid-m1.dts | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/rockchip/rk3568-odroid-m1.dts b/arch/arm64/boot/dts/rockchip/rk3568-odroid-m1.dts
+index 9a84a7e76d7a..bd24ccf94e76 100644
+--- a/arch/arm64/boot/dts/rockchip/rk3568-odroid-m1.dts
++++ b/arch/arm64/boot/dts/rockchip/rk3568-odroid-m1.dts
+@@ -153,6 +153,11 @@ &combphy1 {
+ 	status = "okay";
+ };
+ 
++&combphy2 {
++	/* used for SATA */
++	status = "okay";
++};
++
+ &cpu0 {
+ 	cpu-supply = <&vdd_cpu>;
+ };
+@@ -538,6 +543,10 @@ &saradc {
+ 	status = "okay";
+ };
+ 
++&sata2 {
++	status = "okay";
++};
++
+ &sdhci {
+ 	bus-width = <8>;
+ 	max-frequency = <200000000>;
+-- 
+2.39.0
+
