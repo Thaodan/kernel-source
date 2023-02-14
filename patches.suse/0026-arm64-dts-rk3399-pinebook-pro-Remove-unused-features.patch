@@ -1,4 +1,4 @@
-From aef1f4b6a5ea3154bd82e7101d6476dce56d868f Mon Sep 17 00:00:00 2001
+From e51c199476db58aba3b9c1dd10904656290ed371 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Ond=C5=99ej=20Jirman?= <megi@xff.cz>
 Date: Sun, 21 Nov 2021 17:02:50 +0100
 Subject: [PATCH 26/30] arm64: dts: rk3399-pinebook-pro: Remove unused features

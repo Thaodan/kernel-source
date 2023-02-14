@@ -1,4 +1,4 @@
-From fe44193dc105a1d09e6a23f5aa22395b535d136f Mon Sep 17 00:00:00 2001
+From c2fe1fe67ed218b94a62fa917db7f39dd68b68a7 Mon Sep 17 00:00:00 2001
 From: Dongjin Kim <tobetter@gmail.com>
 Date: Fri, 30 Sep 2022 07:12:35 +0200
 Subject: [PATCH 09/30] arm64: dts: rockchip: Add Hardkernel ODROID-M1 board

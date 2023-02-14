@@ -1,4 +1,4 @@
-From c42de2b13274aae96bbb84dfa61e41e0bd537881 Mon Sep 17 00:00:00 2001
+From 94f3915311771868f8275a42c64ab6872da3fe50 Mon Sep 17 00:00:00 2001
 From: Dragan Simic <dragan.simic@gmail.com>
 Date: Thu, 3 Mar 2022 17:42:14 +0100
 Subject: [PATCH 05/30] arm64: dts: rockchip: Add PCIe bus scan delay to Rock

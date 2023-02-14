@@ -1,4 +1,4 @@
-From 1820b7d071b889357448d4c243bd9114e41c9c85 Mon Sep 17 00:00:00 2001
+From c166fd265a94a356f3ee7d1302575fef470d676b Mon Sep 17 00:00:00 2001
 From: Dongjin Kim <tobetter@gmail.com>
 Date: Thu, 10 Sep 2020 11:01:33 +0900
 Subject: [PATCH 01/30] ODROID-COMMON: gpu/drm: add new display resolution

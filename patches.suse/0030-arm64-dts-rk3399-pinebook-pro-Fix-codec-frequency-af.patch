@@ -1,4 +1,4 @@
-From 68229fa0ccdb63277c2535c0127a3ffdcdb995bc Mon Sep 17 00:00:00 2001
+From dd10c203f1fc721411adb1031c1b7c8cd4cc8ec4 Mon Sep 17 00:00:00 2001
 From: Ondrej Jirman <megi@xff.cz>
 Date: Sun, 28 Aug 2022 16:00:26 +0200
 Subject: [PATCH 30/30] arm64: dts: rk3399-pinebook-pro: Fix codec frequency

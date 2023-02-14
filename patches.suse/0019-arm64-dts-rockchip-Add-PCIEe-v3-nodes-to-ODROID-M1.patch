@@ -1,4 +1,4 @@
-From 788f4d9bf77512a3edc814515f6cebf5c4eec9ea Mon Sep 17 00:00:00 2001
+From f982cbc2ddff329a1c6ef51227d52eb1d05d2508 Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:45 +0200
 Subject: [PATCH 19/30] arm64: dts: rockchip: Add PCIEe v3 nodes to ODROID-M1

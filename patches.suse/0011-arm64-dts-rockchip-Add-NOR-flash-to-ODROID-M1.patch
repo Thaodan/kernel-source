@@ -1,4 +1,4 @@
-From 516b929e1cc0e0730dc6d8ae80f948e2d582e1ab Mon Sep 17 00:00:00 2001
+From 64b31eb91026bb5bb17965ebd9ec1ee452906310 Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:37 +0200
 Subject: [PATCH 11/30] arm64: dts: rockchip: Add NOR flash to ODROID-M1

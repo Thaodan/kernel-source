@@ -1,4 +1,4 @@
-From 7ff19cf956e3afa67303ec651196742c88e20e50 Mon Sep 17 00:00:00 2001
+From 298863dd82177fb99b5d98f68f957d4cde58b0df Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Jari=20H=C3=A4m=C3=A4l=C3=A4inen?= <nuumiofi@gmail.com>
 Date: Sun, 22 Nov 2020 15:24:49 +0200
 Subject: [PATCH 03/30] nuumio: pcie: Reimplement rockchip PCIe bus scan delay

@@ -1,4 +1,4 @@
-From 87854f994111a556f7d2c8747a2258e66253ab02 Mon Sep 17 00:00:00 2001
+From e8a47fe698692279acfb55c206e9438b6e9f8c6d Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:44 +0200
 Subject: [PATCH 18/30] arm64: dts: rockchip: Add SATA support to ODROID-M1

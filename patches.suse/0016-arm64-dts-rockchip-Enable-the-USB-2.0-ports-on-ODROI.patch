@@ -1,4 +1,4 @@
-From 5adf35d7201f58f6956d156130386296aff3741e Mon Sep 17 00:00:00 2001
+From b8960631aa46116c07926101fd2a8efc6557a83e Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:42 +0200
 Subject: [PATCH 16/30] arm64: dts: rockchip: Enable the USB 2.0 ports on

@@ -1,4 +1,4 @@
-From 35559659b5ab96347b01e42ecacdfa17bffd0a98 Mon Sep 17 00:00:00 2001
+From 136b538e759d973d6a4c6307ef34f8e80f4d4ec1 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Ond=C5=99ej=20Jirman?= <megi@xff.cz>
 Date: Sun, 14 Nov 2021 01:16:51 +0100
 Subject: [PATCH 24/30] arm64: dts: rk3399-pinebook-pro: Improve Type-C support

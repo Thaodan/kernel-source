@@ -1,4 +1,4 @@
-From bd3066e413269b1d58fa325dab9c9074e791ddfa Mon Sep 17 00:00:00 2001
+From b7edf59c7a0508853b9841c243357a72dbb582d6 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Ond=C5=99ej=20Jirman?= <megi@xff.cz>
 Date: Tue, 11 Jan 2022 13:08:47 +0100
 Subject: [PATCH 07/30] arm64: dts: allwinner: h6: Enable hdmi sound card on

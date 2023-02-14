@@ -1,4 +1,4 @@
-From 80a3ca1623a5db4b6e1f350624f0b99edfead1aa Mon Sep 17 00:00:00 2001
+From ecdc71f9d589b50563e603b0a04be93766300a3f Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:43 +0200
 Subject: [PATCH 17/30] arm64: dts: rockchip: Enable the USB 3.0 ports on

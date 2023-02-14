@@ -1,4 +1,4 @@
-From 382a7366b3dbed0a3f082e9ea9209d5775ceb90e Mon Sep 17 00:00:00 2001
+From 0e8eaf0080ae188a79276929f5d670254190e1f4 Mon Sep 17 00:00:00 2001
 From: Ondrej Jirman <megi@xff.cz>
 Date: Mon, 27 Jun 2022 18:45:02 +0200
 Subject: [PATCH 28/30] arm64: dts: rockchip: rk3399-pinebook-pro: Support both

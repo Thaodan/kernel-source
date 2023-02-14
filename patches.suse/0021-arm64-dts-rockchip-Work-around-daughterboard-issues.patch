@@ -1,4 +1,4 @@
-From 33cf0aa1cfd99f3f933d85d1835eee665bf54064 Mon Sep 17 00:00:00 2001
+From 99699b5401df34ba38d01327077e62b85411481a Mon Sep 17 00:00:00 2001
 From: Dragan Simic <dragan.simic@gmail.com>
 Date: Mon, 16 May 2022 03:46:44 +0200
 Subject: [PATCH 21/30] arm64: dts: rockchip: Work around daughterboard issues

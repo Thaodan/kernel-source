@@ -1,4 +1,4 @@
-From 3c05e021db777d7df5b99b92b0cb2957808d3516 Mon Sep 17 00:00:00 2001
+From 77f9d0644a74fcebdeccd23d52ff4a1433c871da Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:39 +0200
 Subject: [PATCH 13/30] arm64: dts: rockchip: Enable vop2 and hdmi tx on

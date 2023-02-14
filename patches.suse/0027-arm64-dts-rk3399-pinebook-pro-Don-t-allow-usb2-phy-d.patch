@@ -1,4 +1,4 @@
-From d4bf22c5230da56399b62321421fc722080cf005 Mon Sep 17 00:00:00 2001
+From 59995bb8be7bc1fb4e291aad947b839437125162 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Ond=C5=99ej=20Jirman?= <megi@xff.cz>
 Date: Fri, 4 Feb 2022 02:28:57 +0100
 Subject: [PATCH 27/30] arm64: dts: rk3399-pinebook-pro: Don't allow usb2 phy

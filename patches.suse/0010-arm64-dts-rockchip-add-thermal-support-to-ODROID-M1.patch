@@ -1,4 +1,4 @@
-From 42ba5e93e8b2b5d6d3b6144b7bc9e40c48ed86be Mon Sep 17 00:00:00 2001
+From 32f765da0cb222c144c463ef6a89e371bc782d1f Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:36 +0200
 Subject: [PATCH 10/30] arm64: dts: rockchip: add thermal support to ODROID-M1

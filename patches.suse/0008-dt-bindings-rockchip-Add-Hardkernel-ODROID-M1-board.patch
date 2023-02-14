@@ -1,4 +1,4 @@
-From 162314f39e1288d9f124a28aebd2fc9c80e6132d Mon Sep 17 00:00:00 2001
+From b75944a028ac1ba6f49ae08fb2731dc0fcc09d15 Mon Sep 17 00:00:00 2001
 From: Dongjin Kim <tobetter@gmail.com>
 Date: Fri, 30 Sep 2022 07:12:34 +0200
 Subject: [PATCH 08/30] dt-bindings: rockchip: Add Hardkernel ODROID-M1 board

@@ -1,4 +1,4 @@
-From 0bb3dc9aa78ccbaa36b0cbc6b55040680dfb3cb4 Mon Sep 17 00:00:00 2001
+From 59f4d6d189213d6fd464bcc1dbdc3e0b2e1f6b2e Mon Sep 17 00:00:00 2001
 From: Ondrej Jirman <megi@xff.cz>
 Date: Fri, 29 Jul 2022 01:08:29 +0200
 Subject: [PATCH 29/30] ASoC: codec: es8316: "DAC Soft Ramp Rate" is just a 2

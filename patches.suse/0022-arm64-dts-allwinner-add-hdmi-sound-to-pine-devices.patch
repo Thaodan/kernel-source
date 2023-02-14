@@ -1,4 +1,4 @@
-From 64ac823eca026e73bacbaf09e772d9077fb78d04 Mon Sep 17 00:00:00 2001
+From fcfefe4fc0474e5cede3ba619d27f3c98ad5854b Mon Sep 17 00:00:00 2001
 From: Dan Johansen <strit@manjaro.org>
 Date: Mon, 12 Jul 2021 11:17:18 +0200
 Subject: [PATCH 22/30] arm64/dts/allwinner: add hdmi sound to pine devices

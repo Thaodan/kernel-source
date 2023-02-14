@@ -1,4 +1,4 @@
-From 0b0538c298fa2cad840ab93f8c2e9861579c5840 Mon Sep 17 00:00:00 2001
+From 6c613b3ff914007ed73241d66855baa15aacd53f Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:41 +0200
 Subject: [PATCH 15/30] arm64: dts: rockchip: Enable the GPU on ODROID-M1

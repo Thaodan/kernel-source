@@ -1,4 +1,4 @@
-From 05e75618fabbce62c07175d1b2c1f885a7b45ec0 Mon Sep 17 00:00:00 2001
+From 644198727640630a6847404fca676d3506e97fff Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:40 +0200
 Subject: [PATCH 14/30] arm64: dts: rockchip: Enable HDMI audio on ODROID-M1.

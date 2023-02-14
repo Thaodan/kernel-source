@@ -1,4 +1,4 @@
-From 902d3a5b646072047c1acc3fbc2f84eb7390f1e7 Mon Sep 17 00:00:00 2001
+From 16a02fcd1f259b52931666694fad9c9aa813ddc6 Mon Sep 17 00:00:00 2001
 From: Aurelien Jarno <aurelien@aurel32.net>
 Date: Fri, 30 Sep 2022 07:12:38 +0200
 Subject: [PATCH 12/30] arm64: dts: rockchip: Add analog audio on ODROID-M1
