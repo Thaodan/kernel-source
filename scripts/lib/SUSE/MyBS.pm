@@ -40,7 +40,8 @@ sub new {
 	$self->{url} = URI->new($api_url);
 
 	my $cfgfile;
-	foreach ("$ENV{HOME}/.oscrc", "$ENV{HOME}/.config/osc/oscrc") {
+	foreach ("$ENV{HOME}/.oscrc", "$ENV{HOME}/.config/osc/oscrc",
+             "$ENV{XDG_CONFIG_HOME}/osc/oscrc") {
 		if (-f) {
 			$cfgfile = $_;
 			last;
